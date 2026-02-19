@@ -1,19 +1,36 @@
 # MT MedMorph
 
-## Overview
+## Folder Structure
 
-This repository is designed to provide a comprehensive framework for the MedMorph project, aimed at facilitating the secure exchange of health data while complying with HIPAA regulations.
+This project contains the folder structure for the MT MedMorph project, including:
 
-## Project Structure
-
-- **/docs**: Documentation related to the project.
-- **/src**: All source code for the project.
-- **/tests**: Unit and integration tests.
-- **/config**: Configuration files and settings.
-- **README.md**: Overview and purpose of the project.
-- **ARCHITECTURE.md**: Details on system architecture.
-- **HIPAA_SECURITY.md**: Guidelines for security and compliance with HIPAA.
+- **frontend/**: Contains the React/Vite application.
+- **backend/**: Contains the FastAPI application.
+- **docker/**: Contains Dockerfiles and configurations.
+- **kubernetes/**: Contains Kubernetes manifests.
+- **docs/**: Contains project documentation.
 
 ## Getting Started
 
-Instructions on setting up the project and getting it running locally.
+### Frontend
+1. Navigate to the **frontend/** directory.
+2. Install dependencies: `npm install`.
+3. Start the development server: `npm run dev`.
+
+### Backend
+1. Navigate to the **backend/** directory.
+2. Install dependencies: `pip install -r requirements.txt`.
+3. Run the FastAPI application: `uvicorn main:app --reload`.
+
+### Docker
+To build and run the Docker container:
+1. Navigate to the **docker/** directory.
+2. Run: `docker-compose up`.
+
+### Kubernetes
+Deploy the application on Kubernetes:
+1. Navigate to **kubernetes/**.
+2. Apply the configs: `kubectl apply -f .`.
+
+### Documentation
+Documentation is available in the **docs/** directory.
